@@ -1,4 +1,4 @@
-name: Deploy to GitHub Pages
+name: Build
 
 on:
   push:
@@ -44,13 +44,17 @@ jobs:
         uses: actions/cache@v4
         with:
           path: |
-            .turbo
-            node_modules/.cache/turbo
+            .turbo 
           key: ${{ runner.os }}-turbo-${{ github.sha }}
           restore-keys: |
             ${{ runner.os }}-turbo-
 
+      # Verify cache directory exists
+      - name: Verify Cache Directory
+        run: |
+          mkdir -p .turbo
+
       - name: Build
-        run: pnpm run build
+        run: npx turbo build
         env:
           NODE_ENV: production

@@ -1,3 +1,5 @@
+[![Build](https://github.com/jlcanela/saas-pattern-app/actions/workflows/build.yml/badge.svg)](https://github.com/jlcanela/saas-pattern-app/actions/workflows/build.yml)
+
 # Documentation
 
 Consult the [Documentation](doc/README.md).
