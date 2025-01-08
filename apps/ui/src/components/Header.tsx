@@ -45,7 +45,7 @@ const NavButton: Component<NavButtonProps> = (props) => {
 };
 
 export function Header() {
-  const base = import.meta.env.MODE === 'production' ? '/project-ui' : '';
+  //const base = import.meta.env.MODE === 'production' ? '/project-ui' : '';
   
   const navItems: NavItem[] = [
     // { href: "/business-editor", label: "BPMN Editor" },
@@ -70,10 +70,10 @@ export function Header() {
           <Typography variant="h6" component="div" sx={{ mr: 2 }}>
             Smart UI
           </Typography>
-          <NavButton href={`${base}/`} label="Home" />
+          <NavButton href="/" label="Home" />
 
           {navItems.map((item) => (
-            <NavButton href={`${base}${item.href}`} label={item.label} />
+            <NavButton href={`/${item.href}`} label={item.label} />
           ))}
 
           <Box sx={{ flexGrow: 1 }} />
@@ -84,7 +84,7 @@ export function Header() {
             edge="start"
             color="inherit"
             aria-label="github repository"
-            href="https://github.com/jlcanela/project-ui"
+            href="https://github.com/jlcanela/saas-pattern-app"
             sx={{ mr: 2 }}
             target="_blank"
           >

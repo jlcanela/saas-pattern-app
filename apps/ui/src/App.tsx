@@ -42,13 +42,10 @@ function Layout(props: any) {
 
 
 export default function App() {
-  const base = import.meta.env.MODE === 'production' 
-  ? '/data_manager' 
-  : '';
 
   return (
     <ThemeProvider theme={theme}>
-        <Router root={Layout} base={base}>
+        <Router root={Layout}>
           <Route path="/" component={Home} /> 
           <Route path="/simple-wizard" component={ProjectRequestWizard} />       
         </Router>

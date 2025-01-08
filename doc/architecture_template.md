@@ -101,7 +101,3 @@
 - Infrastructure diagrams
 
 This structure provides a comprehensive view of the system architecture while maintaining traceability to business requirements and technical implementation details.
-
-Citations:
-[1] https://pplx-res.cloudinary.com/image/upload/v1736342086/user_uploads/sBQCfNFHnXEdeDt/image.jpg
-[2] https://pplx-res.cloudinary.com/image/upload/v1736342284/user_uploads/IFDWCDqAtjKTego/image.jpg
