@@ -2,6 +2,10 @@
 
 Consult the [Documentation](doc/README.md).
 
+# Demo
+
+Demo app is available at [https://saas-pattern-app-yyqjqyep.fermyon.app/](https://saas-pattern-app-yyqjqyep.fermyon.app/)
+
 # Install
 
 ```
