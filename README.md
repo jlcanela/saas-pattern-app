@@ -6,7 +6,7 @@ Consult the [Documentation](doc/README.md).
 
 Demo app is available at [https://saas-pattern-app-yyqjqyep.fermyon.app/](https://saas-pattern-app-yyqjqyep.fermyon.app/)
 
-# Install
+# Install locally
 
 ```
 git checkout
@@ -24,4 +24,11 @@ spin up
 
 ```
 pnpm run dev
+```
+
+# Deploy on fermyon
+
+```
+spin cloud login
+spin deploy
 ```
